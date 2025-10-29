@@ -8,10 +8,13 @@ public class TimeFormat {
 		int numMinutes = Integer.parseInt(minutes);
 		String ampm = "AM";
 		if(numHours >= 12){
+		    if(numHours != 12){
 			numHours = numHours - 12;
+			}
             ampm = "PM";
 		}
 		else{
+
 			ampm = "AM";
 		}
 		
